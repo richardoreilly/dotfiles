@@ -129,6 +129,9 @@ function install_dotfiles() {
   success_message "already, and then restart Terminal.app."
 }
 
+# Function: uninstall_dotfiles
+# ----------------------------
+# Takes care of every aspect of dotfile uninstallation.
 function uninstall_dotfiles() {
 
   # Scan the directory for dotfiles, then for each dotfile, remove the symlink
@@ -156,18 +159,27 @@ function uninstall_dotfiles() {
   success_message "Everything was uninstalled successfully."
 }
 
+# Function: error_message
+# -----------------------
+# Echoes its first argument in red.
 function error_message() {
   local message="$1"
 
   echo -e "${ERROR_COLOR}$message${DEFAULT_COLOR}"
 }
 
+# Function: success_message
+# -------------------------
+# Echoes its first argument in green.
 function success_message() {
   local message="$1"
 
   echo -e "${SUCCESS_COLOR}$message${DEFAULT_COLOR}"
 }
 
+# Function: prompt_yn
+# -------------------
+# Prompts for a y/n input. Returns 1 if the input is y, 0 if n.
 function prompt_yn() {
   local message="$1"
 
