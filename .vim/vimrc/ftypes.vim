@@ -12,7 +12,7 @@ au BufNewFile,BufRead *.cpp setlocal sw=4 ts=4
 
 " Objective-C.
 au BufNewFile,BufRead *.m set ft=objc
-au BufNewFile,BufRead *.m setlocal sw=4 ts=4
+au BufNewFile,BufRead *.m setlocal cc=100 sw=4 ts=4
 
 " C, C++, Objective-C etc. header files.
 au BufNewFile,BufRead *.h setlocal sw=4 ts=4
