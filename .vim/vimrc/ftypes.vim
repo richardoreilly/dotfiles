@@ -16,3 +16,6 @@ au BufNewFile,BufRead *.m setlocal cc=100 sw=4 ts=4
 
 " C, C++, Objective-C etc. header files.
 au BufNewFile,BufRead *.h setlocal sw=4 ts=4
+
+" Python.
+au BufNewFile,BufRead *.py setlocal sw=4 ts=4
