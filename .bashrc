@@ -34,8 +34,12 @@ alias ..="cd .."
 alias ...="..;.."
 alias c="cd"
 alias l="ls -alF"
+
+# If using Linux or Mac, color the ls output.
 if [[ $(uname) == "Linux" ]]; then
   alias l="ls -alF --color"
+elif [[ $(uname) == "Darwin" ]]; then
+  alias l="ls -alF -G"
 fi
 alias ll="l"
 alias m="mkdir -p"
