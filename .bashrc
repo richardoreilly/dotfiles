@@ -33,7 +33,7 @@ set -o noclobber
 alias ..="cd .."
 alias ...="..;.."
 alias c="cd"
-alias l="ls -alF"
+alias l="ls -alF --color"
 alias ll="l"
 alias m="mkdir -p"
 alias p="pwd"
