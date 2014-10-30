@@ -33,7 +33,10 @@ set -o noclobber
 alias ..="cd .."
 alias ...="..;.."
 alias c="cd"
-alias l="ls -alF --color"
+alias l="ls -alF"
+if [[ $(uname) == "Linux" ]]; then
+  alias l="ls -alF --color"
+fi
 alias ll="l"
 alias m="mkdir -p"
 alias p="pwd"
