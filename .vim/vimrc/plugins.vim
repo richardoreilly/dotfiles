@@ -14,5 +14,8 @@ Plugin 'gmarik/Vundle.vim'
 " Auto-complete for open-close character pairs.
 Plugin 'Raimondi/delimitMate'
 
+" Jade syntax highlighting.
+Plugin 'digitaltoad/vim-jade'
+
 
 call vundle#end()
