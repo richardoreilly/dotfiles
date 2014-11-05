@@ -46,3 +46,6 @@ alias m="mkdir -p"
 alias p="pwd"
 alias pl="p;l"
 alias t="touch"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

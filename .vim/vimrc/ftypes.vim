@@ -19,3 +19,6 @@ au BufNewFile,BufRead *.h setlocal sw=4 ts=4
 
 " Python.
 au BufNewFile,BufRead *.py setlocal sw=4 ts=4
+
+" JSON.
+au BufNewFile,BufRead *.json set ft=javascript
