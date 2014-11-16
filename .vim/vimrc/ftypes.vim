@@ -23,5 +23,8 @@ au BufNewFile,BufRead *.py setlocal sw=4 ts=4
 " JSON.
 au BufNewFile,BufRead *.json set ft=javascript
 
-"Jade.
+" Jade.
 au BufNewFile,BufRead *.jade set ft=jade
+
+" Java.
+au BufNewFile,BufRead *.java setlocal sw=4 ts=4
