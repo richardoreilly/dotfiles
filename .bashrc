@@ -15,7 +15,7 @@ fi
 
 
 # Customize the prompt.
-PS1="\[\033[0;32m\w\$(__git_ps1)$\033[0m "
+PS1="\033[0;32m\w\$(__git_ps1)$\033[0m "
 
 
 # Text editor.
