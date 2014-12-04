@@ -124,6 +124,11 @@ function install_dotfiles() {
   sleep 3  # So the above message can be read.
   vim +PluginInstall +qall
 
+  # Remove syntax folder from the vim-javascript plugin, as I just want the
+  # indentation improvements and not the shitty syntax highlighting.
+  echo "Removing .vim/bundle/vim-javascript/syntax..."
+  rm -rf .vim/bundle/vim-javascript/syntax
+
   success_message "Everything was installed successfully."
   success_message "Please set Smyck.terminal to the default Terminal.app profile if haven't"
   success_message "already, and then restart Terminal.app."

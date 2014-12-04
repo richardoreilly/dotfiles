@@ -15,7 +15,7 @@ fi
 
 
 # Customize the prompt.
-PS1="\033[0;32m\w\$(__git_ps1)$\033[0m "
+PS1="\[\033[0;32m\w\$(__git_ps1)$\033[0m "
 
 
 # Text editor.
@@ -34,13 +34,6 @@ alias ..="cd .."
 alias ...="..;.."
 alias c="cd"
 alias l="ls -alF"
-
-# If using Linux or Mac, color the ls output.
-if [[ $(uname) == "Linux" ]]; then
-  alias l="ls -alF --color"
-# elif [[ $(uname) == "Darwin" ]]; then
-#   alias l="ls -alF -G"
-fi
 alias ll="l"
 alias m="mkdir -p"
 alias p="pwd"

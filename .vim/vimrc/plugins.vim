@@ -17,5 +17,8 @@ Plugin 'Raimondi/delimitMate'
 " Jade syntax highlighting.
 Plugin 'digitaltoad/vim-jade'
 
+" JavaScript indentation solution.
+Plugin 'pangloss/vim-javascript'
+
 
 call vundle#end()
